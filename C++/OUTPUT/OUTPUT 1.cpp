@@ -77,4 +77,36 @@ int main(int argc, char const *argv[])
 	std::cout<<"Hello World";
 	return 0;
 }
-  
+
+3.What will be the output of the following C++ code?
+
+    #include <iostream>
+    #include <string>
+    #include <algorithm>
+    using namespace std;
+    int main() 
+    {
+        string s = "spaces in text";
+        s.erase(remove(s.begin(), s.end(), ' ' ), s.end() ) ;
+        cout << s << endl;
+    }
+a) spacesintext
+b) spaces in text
+c) spaces
+d) spaces in
+View Answer
+
+Answer: a
+Explanation: In this program, We formed a algorithm to remove spaces in the string.
+
+Before remove():
+s = "spaces in text"
+
+After remove():
+s = "spacesintextxt" (logically, it's "spacesintext", but extra characters still exist at the end)
+
+After erase():
+s = "spacesintext" (extra characters are now deleted)
+
+Without erase():
+If you only use remove() without erase(), the string will still have extra characters beyond the logical end.
