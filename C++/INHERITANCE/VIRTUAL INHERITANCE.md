@@ -9,7 +9,6 @@ class A {
 public:
     int value;
 };
-
 class B : public A {};
 class C : public A {};
 
@@ -26,10 +25,8 @@ class A {
 public:
     int value;
 };
-
 class B : public virtual A {};
 class C : public virtual A {};
-
 class D : public B, public C {}; // Now no diamond problem
 </code>
 Here, B and C inherit from A virtually, meaning that when D inherits from both B and C, only one copy of A is created, and that single copy is shared by both B and C.
