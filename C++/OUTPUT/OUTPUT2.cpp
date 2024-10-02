@@ -21,12 +21,12 @@ The result of int + float is promoted to float.
 sizeof(float) is typically 4 bytes on most systems.
 So this will output 4 (the size of a float).
 cout << a;:
-This will output 6, because a was incremented in the previous line.
+This will output  5, because a was incremented in the previous line.
 The output will be:
 
 
 Copy
-46
+45
 Key points:
 
 Using an uninitialized variable (b) leads to undefined behavior. In practice, it will likely contain a garbage value.
@@ -80,11 +80,11 @@ So, the final output is indeed:
 
 
 Copy
-46
+45
 Where:
 
 4 comes from the sizeof(float)
-6 comes from the new value of a
+5 comes from the new value of a
 They appear together without separation because there's no space, newline, or endl between the cout statements.
 
 I apologize for any confusion in my previous explanation. You're correct that the output is 46, not 4 and 6 on separate lines. This example demonstrates why it's important to be careful with side effects and to use proper formatting in output statements to avoid misleading results.
@@ -108,7 +108,7 @@ This would output:
 
 Copy
 4
-6
+5
 
   #include <iostream>
 using namespace std;
