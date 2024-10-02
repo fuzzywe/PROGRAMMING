@@ -142,3 +142,22 @@ public class Solution{
 
 120 200 14
 016 is an octal number, its equivalent decimal number is 14. Hence answer is B.
+
+4. 
+Find the value of A[1] after execution of the following program.
+
+int[] A = {0,2,4,1,3};
+for(int i = 0; i < A.length; i++){
+A[i] = A[(A[i] + 3) % A.length];
+}
+
+
+
+
+Hide
+Wrong Answer
+a.length = 5
+             A[0] = a[(0 + 3) % 5] = a[3] = 1
+             So, a[0] =  a[3] = 1
+             A[1] = a[(2 + 3) % 5] = a[0] = 1
+             Therefore, a[1] = 1;
