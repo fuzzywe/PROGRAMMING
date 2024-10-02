@@ -125,3 +125,62 @@ public class Main {
 Explanation:
 classVariable: Since it's static, any changes made to this variable in one object will reflect in all objects of the class. It is shared by all instances of the class.
 instanceVariable: Each object has its own copy of this variable. Changes made to this variable in one object do not affect the other objects.
+
+Static keyword makes a variable belong to a class,rather than being defined for each instance of the class.
+
+ 
+5.How many objects will be created in the following?
+
+String a = new String(“Interviewbit”);
+String b = new String(“Interviewbit”);
+Strinc c = “Interviewbit”;
+String d = “Interviewbit”;
+
+Heap vs String Pool:
+Heap memory is where Java stores new objects when you use the new keyword.
+String pool is a special part of memory where Java stores string literals (like "Interviewbit") to avoid duplicate strings and save memory. It reuses strings if they already exist.
+Now, let’s explain the four lines of code:
+
+Code Breakdown:
+java
+Copy code
+String a = new String("Interviewbit");
+String b = new String("Interviewbit");
+String c = "Interviewbit";
+String d = "Interviewbit";
+1. String a = new String("Interviewbit");
+What happens:
+"Interviewbit" is a string literal. The first time Java sees it, it stores it in the string pool.
+The new String("Interviewbit") creates a new object in the heap (even though "Interviewbit" exists in the string pool).
+Result:
+One string object is created in the string pool (for the literal "Interviewbit") — if it doesn’t already exist.
+One new object is created in the heap for a.
+2. String b = new String("Interviewbit");
+What happens:
+"Interviewbit" is already in the string pool (created when a was initialized).
+The new String("Interviewbit") creates a new object in the heap for b.
+Result:
+No new object is created in the string pool.
+One new object is created in the heap for b.
+3. String c = "Interviewbit";
+What happens:
+Java checks the string pool to see if "Interviewbit" already exists. It does (from step 1).
+No new object is created, c just points to the existing "Interviewbit" object in the pool.
+Result:
+No new object is created. c reuses the string from the string pool.
+4. String d = "Interviewbit";
+What happens:
+Just like c, Java checks the string pool and finds "Interviewbit" already exists.
+d points to the same object in the pool that c points to.
+Result:
+No new object is created. d reuses the same object in the string pool.
+Summary:
+2 objects are created in the heap (one for a, one for b).
+1 object is created in the string pool (for the string literal "Interviewbit").
+So, 3 objects are created in total:
+
+One object in the string pool (for "Interviewbit").
+One object in the heap for a.
+One object in the heap for b.
+
+  
