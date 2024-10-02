@@ -11,7 +11,6 @@ public:
 };
 class B : public A {};
 class C : public A {};
-
 class D : public B, public C {};  // Diamond problem
 </code>
 In the above case, class D inherits from both B and C, which in turn inherit from class A. This creates ambiguity in D because D now has two copies of A's data members (one from B and one from C).
@@ -43,17 +42,14 @@ public:
     int value;
     A() : value(0) {}
 };
-
 class B : public virtual A {
 public:
     B() { value = 1; }
 };
-
 class C : public virtual A {
 public:
     C() { value = 2; }
 };
-
 class D : public B, public C {
 public:
     D() {
@@ -61,7 +57,6 @@ public:
         value = 3;
     }
 };
-
 int main() {
     D obj;
     std::cout << obj.value;  // Output: 3
