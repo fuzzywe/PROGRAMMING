@@ -12,8 +12,8 @@ int main()
         a = 10;  // Step 3: Attempt to modify the captured variable 'a'
     };
     check();  // Step 4: Call the lambda function
-    cout << "Value of a: " << a << endl;  // Step 5: Print the value of 'a'
-    return 0;  // Step 6: Return 0 to indicate successful completion
+    cout << "Value of a: " << a << endl;  // Step 5: error
+    return 0;  
 }
 ```
 
@@ -31,28 +31,24 @@ int main()
 4. **Calling the Lambda**:
    - `check();`: This invokes the lambda function, executing its body. Since `a` is captured by value, the change to `a` here does not persist outside the lambda.
 
-5. **Output**:
-   - `cout << "Value of a: " << a << endl;`: This prints the value of `a` in the main function, which remains `5`, since the lambda did not modify the original `a`.
-
-### Output of the Program:
-
-When you run this code, the output will be:
-```
-Value of a: 5
-```
-
-### Summary:
-
-- Since `a` is captured by value in the lambda, changes made to it inside the lambda do not affect the original variable in the `main()` function. To modify the original variable, you would need to capture it by reference using `[&]` instead of `[=]`. Here’s how you could do that:
-
-```cpp
-auto check = [&]() 
+#include<iostream>
+using namespace std;
+int main()
 {
-    a = 10;  // This would now modify the original 'a'
-};
-```
+	int a = 5;
+	auto check = [=]() 
+        {
+		a = 10;
+	};
+	check();
+	cout<<"Value of a: "<<a<<endl;
+	return 0;
+}
+a) Segmentation fault
+b) Value of a: 5
+c) Value of a: 10
+d) Error
+View Answer
 
-With this change, the output would be:
-```
-Value of a: 10
-```
+Answer: d
+Explanation: As this lambda expression is capturing the extrenal variable by value therefore the value of a cannot be changes inside the lambda expression hence the program gives error.
