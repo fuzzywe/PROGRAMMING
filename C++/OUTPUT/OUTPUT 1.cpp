@@ -61,4 +61,20 @@ Copy code
 Hello World
 In this version, we use strcat to concatenate the C-style strings.
 
+
+2.#include <iostream>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+	cout<<"Hello World";
+	return 0;
+}
+========================================
+================code 2=================
+#include <iostream>
+int main(int argc, char const *argv[])
+{
+	std::cout<<"Hello World";
+	return 0;
+}
   
