@@ -72,7 +72,13 @@ Understanding the differences between stack and heap memory is crucial for effic
 - **Fixed Size**: The size of statically allocated memory must be known and fixed at compile time.
 - **Lifetime**: Memory allocated statically exists for the duration of the program, meaning it is allocated when the program starts and deallocated when the program ends.
 - **Scope**: Statically allocated variables can be global (accessible throughout the program) or local (accessible only within the function).
-- **Efficiency**: Generally faster to access compared to heap memory due to their fixed location in memory.
+- 
+   
+   
+   Generally faster to access compared to heap memory due to their fixed location in memory.
+
+
+   
 
 **Examples**:
 - **Global Variables**:
