@@ -17,4 +17,6 @@ a) Destructor called: This would happen if the destructor were public, but it is
 b) Nothing will be printed: This is incorrect because the program will not compile.
 c) Error: This is the correct answer because of the private destructor.
 d) Segmentation fault: This is a runtime error that does not apply here since the error occurs at compile time.
+
+Explanation: Whenever a destructor is private then one should not define any normal object as it will be destroyed at the end of the program which will call destructor and as destructor is private the program gives error during compile while in case of pointer object the compiler at compile does not know about the object, therefore, does not gives compile error. Hence when the destructor is private then the programmer can declare pointer object but cannot declare a normal object.
 In conclusion, the key takeaway is that when a destructor is private, you cannot create normal objects of that class, leading to a compile-time error. Understanding destructors and their access levels is crucial for managing resources in C++.
