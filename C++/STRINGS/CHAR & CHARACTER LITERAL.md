@@ -1,3 +1,6 @@
+**Character (char) is a data type (a box) that can hold a single character.**
+**Character Literal is how you write a character in your code (the symbol you put in the box).**
+
 Let’s break down how much **memory** a **character (`char`)** and a **character literal** hold:
 
 ### 1. **Character (`char`)**:
