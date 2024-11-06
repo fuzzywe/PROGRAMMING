@@ -1,4 +1,5 @@
-### Summary of the Video Transcript
+![C_05 Structure of a C Program _ Programming in C 11-5 screenshot](https://github.com/user-attachments/assets/62071cf9-ff29-4e14-a86c-c7e2e7dcd073)
+
 
 1. **High-Level Language**: C is a high-level language, meaning it abstracts away low-level details like machine code and CPU architecture, allowing programmers to focus on writing programs using English-like syntax and mathematical notations.
 
