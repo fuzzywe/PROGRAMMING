@@ -54,8 +54,9 @@
 9. **Q: Explain static variables and their use cases.**
    - A: Static variables maintain their value between function calls. Used in counters, singleton patterns, and maintaining state.
 
-10. **Q: What are volatile variables?**
-    - A: Volatile tells compiler that variable can change unexpectedly. Used in hardware interfaces, interrupt service routines.
+What is the purpose of the address-of operator (&) in C?
+
+Answer: The address-of operator (&) is used to obtain the memory address of a variable. It is commonly used with scanf to store input in a variable
 
 11. **Q: How does C handle string manipulation?**
     - A: Strings are character arrays terminated by null character. Standard library provides functions like strcpy(), strcat() for manipulation.
