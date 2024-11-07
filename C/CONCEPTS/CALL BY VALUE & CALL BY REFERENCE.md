@@ -23,7 +23,7 @@ function calling is called arguments also know as actual parameters.
 
 like
 
-func(a,b);
+func(a,b) is called arguments;
 
 Sure! Let's break down the video transcript into key points and then frame questions and answers that might be asked in an interview, along with real-world examples.
 
