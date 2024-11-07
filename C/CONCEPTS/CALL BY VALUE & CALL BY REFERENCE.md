@@ -1,3 +1,30 @@
+
+![C_87 Functions in C- part 4 _Call by Value   Call by Reference in C 14-17 screenshot](https://github.com/user-attachments/assets/607dbc9d-e500-41ee-a176-bfa12445e7c0)
+
+pointers store the address of the variable. 
+
+the reference variable are passed to the pointer variable what ever changes done in this will not affect the 
+
+original calling function [func(&a,&b)]
+
+![C_87 Functions in C- part 4 _Call by Value   Call by Reference in C 17-11 screenshot](https://github.com/user-attachments/assets/573288b7-e2ae-4196-8639-daf36878166b)
+
+x stores the value of address x so we need the value not the address so use *x
+
+
+
+function declaration and in fucntion definition we call it as parameters. also know as formal parameters.
+
+func(int a, int b);
+
+
+
+function calling is called arguments also know as actual parameters.
+
+like
+
+func(a,b);
+
 Sure! Let's break down the video transcript into key points and then frame questions and answers that might be asked in an interview, along with real-world examples.
 
 ### Summary of the Video
