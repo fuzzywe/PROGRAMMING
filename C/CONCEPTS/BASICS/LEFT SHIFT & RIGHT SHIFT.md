@@ -17,3 +17,14 @@ a<<2
 a = 10;
 
 10*2^2 = 40 so for a<<2 is 40.
+
+![C_19 Operators in C - Part 7 (Bitwise Operators-II) _  C Programming Tutorials 7-59 screenshot](https://github.com/user-attachments/assets/eea04784-435a-4bf5-b6ad-7e4eb46bead9)
+
+
+![C_19 Operators in C - Part 7 (Bitwise Operators-II) _  C Programming Tutorials 8-24 screenshot](https://github.com/user-attachments/assets/fb843e74-db0a-4bb4-b407-52d4f1d97af4)
+
+![C_19 Operators in C - Part 7 (Bitwise Operators-II) _  C Programming Tutorials 9-46 screenshot](https://github.com/user-attachments/assets/3c97ea1f-f00a-418a-9abe-bde6cbcfee45)
+
+
+
+
