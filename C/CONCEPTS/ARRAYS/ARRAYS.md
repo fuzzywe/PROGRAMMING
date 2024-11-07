@@ -1,3 +1,11 @@
+![C_47 Arrays in C - Part 2 _ Initialization of arrays in C programming 6-46 screenshot](https://github.com/user-attachments/assets/ea2fac3b-6055-4e2c-b3f0-9f15d19328e0)
+
+ This is an example for compile time
+
+![C_47 Arrays in C - Part 2 _ Initialization of arrays in C programming 9-21 screenshot](https://github.com/user-attachments/assets/01927df8-dedb-48d6-8d0f-39f9b28f47c9)
+
+ This is an example of run time
+
 Here are 5 key bullet points summarizing the video transcript:
 
 1. The need for arrays in programming: Arrays allow you to store and process multiple data items of the same data type under a single variable name, rather than needing to declare individual variables.
