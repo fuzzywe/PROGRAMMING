@@ -25,7 +25,24 @@ like
 
 func(a,b) is called arguments;
 
-Sure! Let's break down the video transcript into key points and then frame questions and answers that might be asked in an interview, along with real-world examples.
+there are two most popular ways to call functions for parameter passing. 
+1) Call by Value: This method copies the value of an actual parameter or argument into the formal parameter of the
+
+ function. Both actual and formal parameters are stored in different memory locations (in RAM). So, any changes made 
+ 
+ to the formal parameters in the called function are not reflected in the actual parameters in the calling function. 
+ 
+ Note that, by default, C programming uses call by value to pass parameters. 
+
+2) Call by Reference: On the other hand, in the call by reference method, the address of an actual parameter is copied
+
+into the formal parameter. Both actual and formal parameters refer to the same memory location. So, any changes made 
+
+to the formal parameters in the called function are actually reflected in the actual parameters of the caller 
+
+function. In C, we can use pointers to get the effect of pass by reference or call by reference whatever you call it. 
+
+
 
 ### Summary of the Video
 
