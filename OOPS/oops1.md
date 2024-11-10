@@ -40,6 +40,13 @@ object is a physical construct , **occupies space in memory**
 
 **new keyword** used to create an object
 
+class is a user defined data type
+
+ **what is instance variable**?
+
+ the variables inside the object is called instance variable example rollno,name and marks.
+
+
 
 ![OOP-1_page-0009](https://github.com/user-attachments/assets/1d3ed43b-7eb6-47c7-9405-b439fdcbb219)
 
