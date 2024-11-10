@@ -1,3 +1,14 @@
+
+![OOP 1 _ Introduction   Concepts - Classes, Objects, Constructors, Keywords 7-16 screenshot](https://github.com/user-attachments/assets/f93a8a10-bb9c-46af-806f-1f5b72f1b32b)
+
+now every single element should contain this three things(roll no,name, marks) here is where class comes to play a role
+
+role no , name and marks properties are combined into a single entity callled class.
+
+you can create your own datatype callled  classes. 
+
+student[] student = new student[5]
+
 ![OOP-1_page-0009](https://github.com/user-attachments/assets/1d3ed43b-7eb6-47c7-9405-b439fdcbb219)![OOP-1_page-0002](https://github.com/user-attachments/assets/5ef9722c-9e73-4dc8-b122-919622e8a48d)
 
 ![OOP-1_page-0003](https://github.com/user-attachments/assets/2b55ce6b-ef4c-4051-b6b5-7e008020d6e7)
