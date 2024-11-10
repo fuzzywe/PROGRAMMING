@@ -139,6 +139,22 @@ In this example:
 - The **dot operator** is used to set attributes (`myCar.color`) and call methods (`myCar.displayInfo()`).
 - The **`new` keyword** allocates memory for `myCar` and returns a reference, which is stored in the variable `myCar`.
 
+  In Java, memory allocation for objects is primarily handled with the `new` keyword. However, there are other mechanisms and keywords associated with object memory allocation and management:
+
+
+
+### Summary Table
+
+| Method                  | Description                                      | Use Case                                    |
+|-------------------------|--------------------------------------------------|---------------------------------------------|
+| `new`                   | Standard way to allocate memory                  | Creating most objects                       |
+| `newInstance`           | Allocates via reflection                         | Dynamic instantiation without `new`         |
+| `clone`                 | Creates a copy of an existing object             | Duplicating objects with the same state     |
+| **Deserialization**     | Restores from a serialized stream                | Object persistence and retrieval            |
+| **Anonymous Classes**   | Allocates for single-use class instances         | Implementing single-use interfaces or classes |
+
+Each method has unique advantages and is suited for specific use cases. Let me know if you want further details on any of these methods!
+
 ![10 11 2024_20 33 16_REC](https://github.com/user-attachments/assets/b84d7033-d02e-4738-8585-a470abf04e17)
 
 
