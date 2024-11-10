@@ -29,11 +29,23 @@ class is a template and obj is an instance of a class. instance means phyical ex
 ![OOP-1_page-0002](https://github.com/user-attachments/assets/5ef9722c-9e73-4dc8-b122-919622e8a48d)
 
 
+![OOP-1_page-0003](https://github.com/user-attachments/assets/2b55ce6b-ef4c-4051-b6b5-7e008020d6e7)
+
+class is logic construct
+
+object is a physical construct , **occupies space in memory**
+
+**objects are stored in the heap memory**
+
+
+**new keyword** used to create an object
+
+
 ![OOP-1_page-0009](https://github.com/user-attachments/assets/1d3ed43b-7eb6-47c7-9405-b439fdcbb219)
 
 
 
-![OOP-1_page-0003](https://github.com/user-attachments/assets/2b55ce6b-ef4c-4051-b6b5-7e008020d6e7)
+
 
 ![OOP-1_page-0004](https://github.com/user-attachments/assets/550a5233-5c84-4ac7-9743-92045e25d08b)
 
