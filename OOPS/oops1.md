@@ -7,7 +7,18 @@ role no , name and marks properties are combined into a single entity callled cl
 
 you can create your own datatype callled  classes. 
 
-student[] student = new student[5]
+student[] students = new student[5]
+
+![OOP 1 _ Introduction   Concepts - Classes, Objects, Constructors, Keywords 7-16 screenshot](https://github.com/user-attachments/assets/7d631eaa-70f6-4fc7-a680-479dbd3f19ff)
+
+![10 11 2024_19 52 04_REC](https://github.com/user-attachments/assets/f9a49969-569d-4e24-aea9-bd2149227282)
+
+Student janani 
+
+janani is a reference variable for Student
+with the help of janani i can access the roll no,marks,and name
+
+
 
 ![OOP-1_page-0009](https://github.com/user-attachments/assets/1d3ed43b-7eb6-47c7-9405-b439fdcbb219)![OOP-1_page-0002](https://github.com/user-attachments/assets/5ef9722c-9e73-4dc8-b122-919622e8a48d)
 
