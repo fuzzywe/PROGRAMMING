@@ -18,9 +18,12 @@ Student janani
 janani is a reference variable for Student
 with the help of janani i can access the roll no,marks,and name
 
+![OOP-1_page-0002](https://github.com/user-attachments/assets/5ef9722c-9e73-4dc8-b122-919622e8a48d)
 
 
-![OOP-1_page-0009](https://github.com/user-attachments/assets/1d3ed43b-7eb6-47c7-9405-b439fdcbb219)![OOP-1_page-0002](https://github.com/user-attachments/assets/5ef9722c-9e73-4dc8-b122-919622e8a48d)
+![OOP-1_page-0009](https://github.com/user-attachments/assets/1d3ed43b-7eb6-47c7-9405-b439fdcbb219)
+
+
 
 ![OOP-1_page-0003](https://github.com/user-attachments/assets/2b55ce6b-ef4c-4051-b6b5-7e008020d6e7)
 
