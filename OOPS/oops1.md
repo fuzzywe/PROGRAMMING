@@ -46,6 +46,100 @@ class is a user defined data type
 
  the variables inside the object is called instance variable example rollno,name and marks.
 
+![OOP-1_page-0004](https://github.com/user-attachments/assets/550a5233-5c84-4ac7-9743-92045e25d08b)
+
+**dot operator or separator**  used to link the object reference variable like rollno,name,marks with the instance variable called students
+
+example : students.rollno;
+
+A class is a template for an object, and an object is an instance of a class.
+A class creates a new data type that can be used to create objects.
+
+When you declare an object of a class, you are creating an instance of that class.
+Thus, a class is a logical construct. An object has physical reality. (That is, an object occupies space in memory.)
+
+Objects are characterized by three essential properties: state, identity, and behavior.
+The state of an object is a value from its data type. The identity of an object distinguishes one object from another.
+It is useful to think of an object’s identity as the place where its value is stored in memory.
+The behavior of an object is the effect of data-type operations.
+
+The dot operator links the name of the object with the name of an instance variable.
+Although commonly referred to as the dot operator, the formal specification for Java categorizes the . as a separator.
+The 'new' keyword dynamically allocates(that is, allocates at run time)memory for an object & returns a reference to it.
+This reference is, more or less, the address in memory of the object allocated by new.
+This reference is then stored in the variable.
+Thus, in Java, all class objects must be dynamically allocated.
+
+
+
+This passage provides a foundational understanding of **classes** and **objects** in object-oriented programming, particularly in Java.
+
+### Key Concepts Explained:
+
+1. **Class as a Template**:
+   - A **class** defines a new data type, serving as a blueprint or template for creating **objects**. Classes contain **attributes** (data) and **methods** (functions) that define an object's properties and behavior.
+
+2. **Object as an Instance**:
+   - An **object** is an instance of a class. When you declare an object of a class, memory is allocated to store its data (attributes), which is why an object has "physical reality" in memory, while a class is a logical concept.
+
+3. **Essential Properties of Objects**:
+   - **State**: Represents the data (or value) an object holds, often in the form of instance variables.
+   - **Identity**: Distinguishes each object uniquely, often represented by its memory location.
+   - **Behavior**: The actions an object can perform, defined by the methods in its class.
+
+4. **Dot (.) Operator**:
+   - The **dot operator** links an object with its instance variables or methods, allowing access to an object's properties or actions.
+   - Although commonly called the dot operator, it’s technically known as a separator in Java’s specification.
+
+5. **`new` Keyword**:
+   - The **`new` keyword** dynamically allocates memory at runtime to create an object.
+   - It returns a **reference** to the newly created object, essentially pointing to the memory address where the object is stored. This reference is then assigned to a variable, allowing you to interact with the object.
+
+6. **Dynamic Memory Allocation**:
+   - In Java, all objects are dynamically allocated using `new`. Unlike primitive data types, class instances (objects) must be allocated at runtime, ensuring efficient memory use and flexibility.
+
+   
+
+### Example
+
+Here's a simple example illustrating these concepts in Java:
+
+```java
+// Define a class as a template for objects
+class Car {
+    // Attributes (state)
+    String color;
+    String model;
+
+    // Method (behavior)
+    void displayInfo() {
+        System.out.println("Car Model: " + model + ", Color: " + color);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create an object using the new keyword
+        Car myCar = new Car();
+        
+        // Set the state
+        myCar.color = "Red";
+        myCar.model = "Tesla Model S";
+        
+        // Use dot operator to call a method (behavior)
+        myCar.displayInfo();  // Output: Car Model: Tesla Model S, Color: Red
+    }
+}
+```
+
+In this example:
+- **`Car`** is a class (template).
+- **`myCar`** is an object (instance) of the `Car` class, with its own state (color and model).
+- The **dot operator** is used to set attributes (`myCar.color`) and call methods (`myCar.displayInfo()`).
+- The **`new` keyword** allocates memory for `myCar` and returns a reference, which is stored in the variable `myCar`.
+
+![10 11 2024_20 33 16_REC](https://github.com/user-attachments/assets/b84d7033-d02e-4738-8585-a470abf04e17)
 
 
 ![OOP-1_page-0009](https://github.com/user-attachments/assets/1d3ed43b-7eb6-47c7-9405-b439fdcbb219)
@@ -54,7 +148,7 @@ class is a user defined data type
 
 
 
-![OOP-1_page-0004](https://github.com/user-attachments/assets/550a5233-5c84-4ac7-9743-92045e25d08b)
+
 
 
 ![OOP-1_page-0005](https://github.com/user-attachments/assets/7dee2e46-cb69-466e-9602-7382425f9285)
