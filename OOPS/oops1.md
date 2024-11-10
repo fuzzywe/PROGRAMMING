@@ -22,6 +22,10 @@ take human as example human have 2 arms , 2 legs so just consider human as templ
 
 or take example as car car is template and we can create an petrol,diesel and electric engine.
 
+class is a template and obj is an instance of a class. instance means phyical existence.
+
+
+
 ![OOP-1_page-0002](https://github.com/user-attachments/assets/5ef9722c-9e73-4dc8-b122-919622e8a48d)
 
 
