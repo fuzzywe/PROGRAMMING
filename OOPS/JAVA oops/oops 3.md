@@ -171,6 +171,58 @@ human.population +=1;
 
 ![11 11 2024_12 19 00_REC](https://github.com/user-attachments/assets/c35b5723-39af-4d1f-a935-1384df555dee)
 
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 52-59 screenshot](https://github.com/user-attachments/assets/48444e84-cba9-4f81-9988-1298ada53bee)
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 54-12 screenshot](https://github.com/user-attachments/assets/f1925c6b-d46c-4030-8b37-48037846e303)
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 55-11 screenshot](https://github.com/user-attachments/assets/8f52baad-3f1d-4eb5-bc05-23d364c9c276)
+
+
+**outer class cann't be static only inner class can be static.**
+
+In Java, **outer classes cannot be declared as static** because the `static` keyword, when applied to a class, has specific implications that only apply to **nested classes** (also known as inner classes), not outer classes. Here’s why:
+
+### 1. **Meaning of `static` in Java**:
+   - In Java, the `static` keyword indicates that a member (like a method or variable) belongs to the class itself rather than to any specific instance.
+   - For nested (inner) classes, `static` means the inner class does not need an instance of the outer class to be accessed.
+
+### 2. **Outer Classes Are Top-Level**:
+   - An **outer class** is a **top-level class**—it doesn’t reside within any other class (unlike a nested or inner class).
+   - Since outer classes exist independently, there is no enclosing class to be associated with, so it doesn’t make sense to make an outer class `static`. The `static` keyword is meaningful only in the context of something nested within another class.
+
+### 3. **No Need for `static` on an Outer Class**:
+   - The `static` keyword on a class is used to specify that a nested class can exist independently of an instance of its outer class.
+   - Since an outer class is already independent, there’s no reason to add a `static` modifier. It would be redundant and unnecessary.
+
+### 4. **Java Language Design**:
+   - Java language design specifically allows only **nested classes** (classes defined within other classes) to be `static`. Allowing outer classes to be static would violate this design principle and add unnecessary complexity to the language.
+
+### Example:
+Consider the following code with an outer and inner class:
+
+```java
+public class OuterClass {
+    // Inner static class
+    public static class StaticInnerClass {
+        // Code for the inner static class
+    }
+    
+    // Non-static inner class
+    public class NonStaticInnerClass {
+        // Code for the non-static inner class
+    }
+}
+```
+
+- Here, `StaticInnerClass` is a **static nested class**, which means it can be used independently of an `OuterClass` instance.
+- However, `OuterClass` itself cannot be `static`, because it is the top-level class and doesn’t need to be associated with any other class.
+
+### Summary
+In short, Java does not allow outer classes to be `static` because:
+- `static` is only meaningful in the context of a nested class, where it specifies independence from the outer class instance.
+- Outer classes are already independent entities, so `static` would be redundant and confusing for top-level classes.
+
+
 ---
 
 
