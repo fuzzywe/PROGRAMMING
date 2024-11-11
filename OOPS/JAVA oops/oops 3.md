@@ -533,3 +533,6 @@ In this example:
 
 ### Summary
 `System.out.println()` is a standard way to print text to the console in Java, and it’s widely used for debugging, logging, and displaying output to the user.
+
+![Uploading 11.11.2024_13.06.21_REC.png…]()
+
