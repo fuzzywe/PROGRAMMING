@@ -1,3 +1,79 @@
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 25-59 screenshot](https://github.com/user-attachments/assets/c83ce0ae-8aa4-447b-82c9-a4b5caa0d71d)
+
+
+this represents object reference.
+
+![11 11 2024_11 25 40_REC](https://github.com/user-attachments/assets/cc5cdc6d-f135-4164-9bf6-33a81a3ed58f)
+
+
+In Java, the `static` keyword is not directly related to objects; instead, it is related to the class itself. Here’s a breakdown of what `static` means and how it differs from instance (object-related) members:
+
+### 1. **Static Members (Variables and Methods)**:
+   - **Class-Level Association**: Static variables and methods are associated with the class, not individual objects.
+   - **Shared Across All Instances**: If you declare a variable as `static`, it is shared by all objects of the class. All instances of the class access the same `static` variable.
+   - **Access Without Object Creation**: Static members can be accessed directly using the class name, without creating an instance of the class.
+
+   Example:
+   ```java
+   class MyClass {
+       static int staticCounter = 0; // Shared by all instances
+       int instanceCounter = 0;      // Unique to each instance
+
+       public MyClass() {
+           staticCounter++;    // Increases with each new object but is shared
+           instanceCounter++;  // Unique per object
+       }
+
+       static void displayStaticCount() {
+           System.out.println("Static count: " + staticCounter);
+       }
+
+       void displayInstanceCount() {
+           System.out.println("Instance count: " + instanceCounter);
+       }
+   }
+
+   public class Main {
+       public static void main(String[] args) {
+           MyClass obj1 = new MyClass();
+           MyClass obj2 = new MyClass();
+
+           MyClass.displayStaticCount(); // Accessing static method via class name
+           obj1.displayInstanceCount();  // Accessing instance method via object
+       }
+   }
+   ```
+   In this example:
+   - `staticCounter` is shared by all `MyClass` instances.
+   - `instanceCounter` is unique to each `MyClass` object (`obj1` and `obj2`).
+
+### 2. **Static Blocks**:
+   - Static blocks are used to initialize `static` variables when the class is first loaded into memory.
+   - These blocks run once when the class is loaded, before any object is created.
+
+   ```java
+   class MyClass {
+       static int staticVar;
+
+       static {
+           staticVar = 100; // Initialize static variable
+           System.out.println("Static block executed.");
+       }
+   }
+   ```
+
+### 3. **When to Use Static**:
+   - Use `static` for utility or helper methods that don’t require any object-specific data (e.g., `Math.pow()`).
+   - Use `static` variables for data that should be shared across all instances of a class.
+
+### Key Points:
+   - **Static members are class-level** and not tied to any specific object.
+   - **Instance members are object-level**, unique to each object.
+   - Static members can be accessed without creating an object of the class, while instance members require an object.
+
+In summary, `static` is about class-level scope rather than individual object-related properties.
+
 Certainly! Here are more interview-style questions and answers based on the concepts from the video.
 
 ### Key Topics Covered
