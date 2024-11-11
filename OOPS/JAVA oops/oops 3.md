@@ -6,6 +6,11 @@ this represents object reference.
 
 ![11 11 2024_11 25 40_REC](https://github.com/user-attachments/assets/cc5cdc6d-f135-4164-9bf6-33a81a3ed58f)
 
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 32-7 screenshot](https://github.com/user-attachments/assets/ead8a3cf-763d-46e0-b6a4-9e17c966534e)
+
+static is not dependent on object if no object has been created you can still access
+
+---
 
 In Java, the `static` keyword is not directly related to objects; instead, it is related to the class itself. Here’s a breakdown of what `static` means and how it differs from instance (object-related) members:
 
