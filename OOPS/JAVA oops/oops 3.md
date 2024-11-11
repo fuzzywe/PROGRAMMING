@@ -157,6 +157,20 @@ Here, `mainObject.nonStaticMethod()` works because `mainObject` is an instance o
 
 ![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 42-6 screenshot](https://github.com/user-attachments/assets/fd5e921c-d046-4939-98cc-b877cef4f555)
 
+
+thats why static variable can't use this keyword
+like
+```java
+this.population +=1;
+//instead
+
+human.population +=1;
+```
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 47-35 screenshot](https://github.com/user-attachments/assets/9ad3496c-e538-412a-8e10-783a582840b2)
+
+
+![11 11 2024_12 19 00_REC](https://github.com/user-attachments/assets/c35b5723-39af-4d1f-a935-1384df555dee)
+
 ---
 
 
