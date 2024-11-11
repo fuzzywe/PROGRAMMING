@@ -4,6 +4,58 @@
 
 this represents object reference.
 
+
+whenever you call constructor newobject is created
+
+Yes, when you call a constructor to create a new object, a new instance of that class is created in memory. Here's a breakdown of what happens when you call a constructor:
+
+### 1. **Calling the Constructor**:
+   When you use the `new` keyword to create an object of a class, like this:
+   ```java
+   MyClass obj = new MyClass();
+   ```
+   - `new MyClass()` calls the **constructor** of `MyClass` to initialize a new object.
+   - The constructor is a special method that is automatically invoked when you create an object. It has the same name as the class and no return type.
+
+### 2. **Object Creation**:
+   - **Memory Allocation**: When the constructor is called, memory is allocated for the new object. This memory is stored in the heap area of the Java memory space.
+   - **Initialization**: The constructor is used to initialize the instance variables (fields) of the object. If no constructor is defined, Java provides a default constructor that initializes fields with default values (like `null` for objects, `0` for integers, etc.).
+
+### 3. **Reference Variable**:
+   The constructor creates the object, and the `new` keyword returns a reference to that object, which is stored in the reference variable (`obj` in this case).
+
+### Example:
+
+```java
+public class MyClass {
+    int x;
+
+    // Constructor to initialize the object
+    public MyClass(int value) {
+        x = value;
+    }
+
+    public void display() {
+        System.out.println("Value of x: " + x);
+    }
+
+    public static void main(String[] args) {
+        // Create a new object
+        MyClass obj = new MyClass(10);  // Constructor is called here
+
+        obj.display();  // Output: Value of x: 10
+    }
+}
+```
+
+### Explanation:
+- When `new MyClass(10)` is called, the constructor `MyClass(int value)` is invoked.
+- A new object is created in memory, and the `x` field is initialized to `10`.
+- The reference to this object is stored in the variable `obj`.
+
+### In Summary:
+Whenever you call a constructor using the `new` keyword, a new object is created in memory, and the constructor is used to initialize it.
+
 ![11 11 2024_11 25 40_REC](https://github.com/user-attachments/assets/cc5cdc6d-f135-4164-9bf6-33a81a3ed58f)
 
 ![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 32-7 screenshot](https://github.com/user-attachments/assets/ead8a3cf-763d-46e0-b6a4-9e17c966534e)
