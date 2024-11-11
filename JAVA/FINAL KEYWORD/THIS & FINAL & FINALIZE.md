@@ -74,4 +74,82 @@ parameterised super class constructor.
 
 
 
+// 1. The 'this' keyword
+class Person {
+    private String name;
+    
+    public void setName(String name) {
+        // 'this' refers to the current object's name field
+        this.name = name;  // Without 'this', name would refer to the parameter
+    }
+}
 
+// 2. The 'final' keyword
+class Configuration {
+    // Final primitive - value cannot be changed
+    final int MAX_CONNECTIONS = 100;
+    
+    // Final reference - reference cannot change but object state can
+    final List<String> VALID_STATES = new ArrayList<>();
+    
+    public void demo() {
+        // This is allowed - modifying object state
+        VALID_STATES.add("Active");
+        
+        // This would cause error - trying to change reference
+        // VALID_STATES = new ArrayList<>();  // Compilation error
+    }
+}
+
+// 3. The finalize() method
+class Resource {
+    protected void finalize() {
+        try {
+            // Cleanup code here
+            System.out.println("Resource cleanup in finalize()");
+        } finally {
+            super.finalize();
+        }
+    }
+}
+
+// 4. Constructors and Inheritance
+class Vehicle {
+    protected String brand;
+    
+    // Default constructor
+    public Vehicle() {
+        System.out.println("Vehicle default constructor");
+    }
+    
+    // Parameterized constructor
+    public Vehicle(String brand) {
+        this.brand = brand;
+        System.out.println("Vehicle parameterized constructor");
+    }
+}
+
+class Car extends Vehicle {
+    private String model;
+    
+    // Calls Vehicle's default constructor automatically
+    public Car() {
+        System.out.println("Car default constructor");
+    }
+    
+    // Explicitly calls Vehicle's parameterized constructor
+    public Car(String brand, String model) {
+        super(brand);  // Must be first statement
+        this.model = model;
+        System.out.println("Car parameterized constructor");
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        // Constructor inheritance example
+        Car car1 = new Car();  // Calls both default constructors
+        Car car2 = new Car("Toyota", "Camry");  // Calls parameterized constructors
+    }
+}
