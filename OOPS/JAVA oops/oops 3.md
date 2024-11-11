@@ -222,8 +222,23 @@ In short, Java does not allow outer classes to be `static` because:
 - `static` is only meaningful in the context of a nested class, where it specifies independence from the outer class instance.
 - Outer classes are already independent entities, so `static` would be redundant and confusing for top-level classes.
 
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 57-20 screenshot](https://github.com/user-attachments/assets/62c2e7be-cee3-44b7-9850-a8451db93bef)
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 57-44 screenshot](https://github.com/user-attachments/assets/b8ab2778-e590-4e41-8ee8-e71da7885902)
+
+if you put Test class in outside of the class then its fine bcz Test class doesn't dependent on any other class
+
+if you declared the inner class as static then its fine
+
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 58-18 screenshot](https://github.com/user-attachments/assets/9e4bc385-027b-4ccf-a0f7-eee0370b4d2b)
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 59-32 screenshot](https://github.com/user-attachments/assets/4e23d07e-99b2-4019-a0d8-23fa67849e2f)
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 59-31 screenshot](https://github.com/user-attachments/assets/0608f50e-c1e0-4669-afdb-df809ea521b0)
 
 ---
+
 
 
 In Java, the `static` keyword is not directly related to objects; instead, it is related to the class itself. Here’s a breakdown of what `static` means and how it differs from instance (object-related) members:
