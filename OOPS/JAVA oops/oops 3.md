@@ -55,7 +55,110 @@ In Java, the `main` method is declared as `static` because it needs to be access
 
 In summary, `main` is `static` so it can be called by the JVM directly as the starting point of the program without requiring an instance of the class. This makes program execution straightforward, efficient, and standardized.
 
+
 ---
+
+Yes, you can declare a non-static method inside a class with a `main` method. However, to call that non-static method from within `main`, you will need to create an instance of the class. This is because non-static methods are tied to instances (objects) of the class, while `main` is a static method and does not belong to any particular instance.
+
+Here’s an example to illustrate:
+
+```java
+public class Main {
+    // Non-static method
+    public void nonStaticMethod() {
+        System.out.println("This is a non-static method.");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Inside the static main method.");
+
+        // Create an instance of Main to call the non-static method
+        Main mainObject = new Main();
+        mainObject.nonStaticMethod(); // Calling the non-static method
+    }
+}
+```
+
+### Explanation:
+
+- **Why We Need an Instance**: Since `main` is `static`, it cannot directly access non-static members of the class. To call `nonStaticMethod()`, we create an instance of the `Main` class (`mainObject` in this case), then use this object to call the non-static method.
+- **Output of This Program**:
+   ```plaintext
+   Inside the static main method.
+   This is a non-static method.
+   ```
+
+### Key Points to Remember:
+- **Static methods** (like `main`) can directly access other static methods or variables in the class.
+- **Non-static methods** require an object instance to be called from within a static context like `main`.
+  
+This approach allows you to organize code with both static and instance methods, using static methods for entry points or utility functions, and non-static methods for object-specific behavior.
+
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 36-23 screenshot](https://github.com/user-attachments/assets/f5988688-3b95-4ef1-8285-5acb952d9079)
+
+
+Certainly!
+
+In Java, **static methods** and **non-static methods** work a bit differently:
+
+### 1. **Static Methods**:
+   - Belong to the **class itself**, not to any particular object.
+   - Can be called directly using the class name, without creating an object.
+   - Example: `main` is a static method, so Java can call `Main.main()` without creating an object of `Main`.
+
+### 2. **Non-Static Methods**:
+   - Belong to **individual objects** of the class.
+   - To call a non-static method, you must first create an object (an instance) of the class.
+   - Non-static methods can access and modify instance variables, which are specific to each object.
+
+### Why You Can’t Call a Non-Static Method Directly from a Static Method
+When you try to call a non-static method directly from `main`, like this:
+
+```java
+public class Main {
+    public void nonStaticMethod() {
+        System.out.println("This is a non-static method.");
+    }
+
+    public static void main(String[] args) {
+        nonStaticMethod(); // ❌ This will cause an error
+    }
+}
+```
+
+Java gives an error because `main` is static, and `nonStaticMethod()` is non-static. The non-static method requires an instance to be called.
+
+### How to Fix It
+To call a non-static method from a static method, create an instance of the class and call the method through that instance, like this:
+
+```java
+public class Main {
+    public void nonStaticMethod() {
+        System.out.println("This is a non-static method.");
+    }
+
+    public static void main(String[] args) {
+        Main mainObject = new Main(); // Create an instance
+        mainObject.nonStaticMethod(); // Call the non-static method on the instance
+    }
+}
+```
+
+Here, `mainObject.nonStaticMethod()` works because `mainObject` is an instance of `Main`, allowing access to its non-static methods. 
+
+### Summary
+- **Static method** (`main`) → Belongs to class, doesn’t need an instance.
+- **Non-static method** (`nonStaticMethod`) → Belongs to objects, needs an instance to be called.
+- Solution: Create an instance in `main`, then use it to call the non-static method.
+
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 37-38 screenshot](https://github.com/user-attachments/assets/6fff40cd-4124-4cab-9bf6-af6faa56a543)
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 42-6 screenshot](https://github.com/user-attachments/assets/fd5e921c-d046-4939-98cc-b877cef4f555)
+
+---
+
 
 In Java, the `static` keyword is not directly related to objects; instead, it is related to the class itself. Here’s a breakdown of what `static` means and how it differs from instance (object-related) members:
 
