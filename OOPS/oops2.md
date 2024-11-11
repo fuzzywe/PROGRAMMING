@@ -109,3 +109,93 @@ Key characteristics of heap elements:
 ### Summary
 - **Stack**: Temporary, automatic memory, managed with function calls and limited in size.
 - **Heap**: Persistent, manually managed memory, used for data with dynamic lifetimes.
+- An **instance variable** is a variable that belongs to a specific instance of a class in Java. Each object created from a class has its own separate copy of the instance variables defined in the class. Instance variables represent the state or properties of each individual object.
+
+### Characteristics of Instance Variables
+- **Defined within a class** but outside any methods, constructors, or blocks.
+- **Unique to each object**: Each instance of the class has its own copy of instance variables, so changing one object's instance variable does not affect another.
+- **Accessed through objects**: Instance variables are typically accessed and modified through the object they belong to.
+- **Stored in heap memory**: When an object is created, instance variables are stored in the heap along with the object.
+
+### Example of Instance Variables
+
+Here's an example to illustrate instance variables:
+
+```java
+public class Car {
+    // Instance variables
+    String model;
+    String color;
+    int year;
+
+    // Constructor to initialize instance variables
+    public Car(String model, String color, int year) {
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
+
+    // Method to display car details
+    public void displayDetails() {
+        System.out.println("Model: " + model + ", Color: " + color + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating two instances (objects) of the Car class
+        Car car1 = new Car("Tesla Model S", "Red", 2022);
+        Car car2 = new Car("Ford Mustang", "Blue", 2021);
+
+        // Each object has its own copy of instance variables
+        car1.displayDetails(); // Outputs: Model: Tesla Model S, Color: Red, Year: 2022
+        car2.displayDetails(); // Outputs: Model: Ford Mustang, Color: Blue, Year: 2021
+    }
+}
+```
+
+### Explanation
+
+- In this example, `model`, `color`, and `year` are **instance variables** of the `Car` class.
+- Each `Car` object (`car1` and `car2`) has its own copy of these instance variables.
+- **Output**:
+  - `car1.displayDetails()` displays the details for `car1`, showing "Tesla Model S, Red, 2022".
+  - `car2.displayDetails()` displays the details for `car2`, showing "Ford Mustang, Blue, 2021".
+
+### Summary
+- **Instance variables** store data unique to each object.
+- They represent the properties or state of an object and are defined within the class.
+
+No, **instance variables are not stored in the stack**. They are stored in the **heap** because instance variables are part of an object, and in Java, objects are allocated in heap memory.
+
+Here’s a breakdown:
+
+1. **Instance Variables**: 
+   - Instance variables (also called "non-static fields") belong to a specific instance of a class, meaning each object has its own copy of instance variables.
+   - When you create an object using `new`, the instance variables for that object are allocated in the heap memory along with the object itself.
+   
+2. **Stack Memory**:
+   - Stack memory is used for method execution, where local variables and method call information (like parameters and return addresses) are stored.
+   - If a method uses a reference to an object, the reference (memory address pointing to the object) is stored in the stack, but the actual object and its instance variables remain in the heap.
+
+### Example
+Consider the following example to illustrate this:
+
+```java
+public class Example {
+    int instanceVariable = 10; // Instance variable, stored in heap
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Example obj = new Example(); // obj reference is stored in stack, object is in heap
+    }
+}
+```
+
+- The **`obj` reference** is stored in the stack as part of the `main` method's stack frame.
+- The **actual `Example` object** and its `instanceVariable` (the instance variable) are stored in the heap.
+
+### Summary
+- **Instance variables** are part of an object and are stored in the **heap**.
+- **References to objects** can be stored in the **stack** (when declared in a method), but they only hold the address pointing to the heap, where the actual object and its instance variables reside.
