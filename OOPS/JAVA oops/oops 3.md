@@ -227,8 +227,18 @@ In short, Java does not allow outer classes to be `static` because:
 ![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 57-44 screenshot](https://github.com/user-attachments/assets/b8ab2778-e590-4e41-8ee8-e71da7885902)
 
 if you put Test class in outside of the class then its fine bcz Test class doesn't dependent on any other class
+but if you put test class inside then Test class belongs to outclass which is static 
 
-if you declared the inner class as static then its fine
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 60-36 screenshot](https://github.com/user-attachments/assets/6f51a7f4-41dd-44fa-b99e-4e0457ee7921)
+
+![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 1-1-27 screenshot](https://github.com/user-attachments/assets/27ec2960-dfe6-4683-b462-cff8b87e6f7b)
+
+
+if you declared the inner class as static then its fine bcz static doesn't dependent on the outerclasss
+
+**objects are created at runtime**
+
+**static variables , class level and static methods are resolve at compile time.**
 
 
 ![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 58-18 screenshot](https://github.com/user-attachments/assets/9e4bc385-027b-4ccf-a0f7-eee0370b4d2b)
@@ -236,6 +246,8 @@ if you declared the inner class as static then its fine
 ![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 59-32 screenshot](https://github.com/user-attachments/assets/4e23d07e-99b2-4019-a0d8-23fa67849e2f)
 
 ![OOP 2 _ Packages, Static, Singleton Class, In-built Methods 59-31 screenshot](https://github.com/user-attachments/assets/0608f50e-c1e0-4669-afdb-df809ea521b0)
+
+
 
 ---
 
