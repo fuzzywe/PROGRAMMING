@@ -10,6 +10,51 @@ this represents object reference.
 
 static is not dependent on object if no object has been created you can still access
 
+without reference to the object without creating any object you can access and use static variables
+
+you can create static variables and static methods.
+
+
+**what is static ?**
+
+ you can use main method without creating an object of the class if you dont put static like 
+
+ ```java
+
+public static void main(String[] args)
+
+```
+you want to create an object of the  class
+ 
+why main is declared as static bcz 
+In Java, the `main` method is declared as `static` because it needs to be accessible by the Java runtime without creating an instance of the class. Here’s a breakdown of why `main` is `static`:
+
+### 1. **Entry Point Without Object Creation**:
+   - The `main` method serves as the entry point for the application. When the Java runtime starts an application, it looks for a specific signature: `public static void main(String[] args)`.
+   - Declaring `main` as `static` allows the runtime to call it directly on the class without creating an instance. If it were not static, the JVM would need to create an object to invoke `main`, which would add complexity and require calling a constructor first.
+
+### 2. **Memory and Performance Efficiency**:
+   - Declaring `main` as static saves memory and speeds up program startup, as no instance of the class needs to be loaded.
+   - The static nature of `main` avoids unnecessary object creation when starting the application, which can be crucial for resource management, especially for large-scale or resource-limited applications.
+
+### 3. **Standardized Signature for the JVM**:
+   - Java has standardized the `main` method as `public static void main(String[] args)` so that the JVM can consistently locate and execute it. Without this standard static declaration, Java would need to implement additional logic to handle various entry points across different programs.
+
+### 4. **Scope of `main` as a Utility Method**:
+   - The `main` method often acts as a utility or driver function, running the initial logic or creating objects that manage the program’s flow. Since it doesn’t typically rely on instance-specific data, it’s appropriate to make it static.
+
+### Example:
+
+   ```java
+   public class Main {
+       public static void main(String[] args) {
+           System.out.println("Program started!");
+       }
+   }
+   ```
+
+In summary, `main` is `static` so it can be called by the JVM directly as the starting point of the program without requiring an instance of the class. This makes program execution straightforward, efficient, and standardized.
+
 ---
 
 In Java, the `static` keyword is not directly related to objects; instead, it is related to the class itself. Here’s a breakdown of what `static` means and how it differs from instance (object-related) members:
