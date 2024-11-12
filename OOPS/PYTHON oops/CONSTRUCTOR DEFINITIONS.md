@@ -3,6 +3,6 @@
 
 ![FireShot Capture 026 - Day 33-CONSTRUCTOR DEFINITIONS, DIFFERENT VARIABLES AND INSTANCE VARI_ - lisa letsupgrade in](https://github.com/user-attachments/assets/57bd97aa-70c2-4895-a2d1-84de45f6ffde)
 
-
+the object will be deference automatically when calling next object reference.
 
 ![FireShot Capture 030 - Day 33-CONSTRUCTOR DEFINITIONS, DIFFERENT VARIABLES AND INSTANCE VARI_ - lisa letsupgrade in](https://github.com/user-attachments/assets/071dbd16-90bd-4774-bd9d-f39a2a298f28)
