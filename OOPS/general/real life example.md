@@ -1,5 +1,10 @@
 https://www.youtube.com/watch?v=Ei2zOVYIyKE
 
+computer as example 
+encapsulation : os take this all apps are integrated into single entity.
+abstraction : backup drive you are creating you can only allocate the space . you do no know internal mechanism like memory address space and memory address integer.
+
+
 1. What is Object-Oriented Programming (OOP)?
 Answer:
 Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to design applications and computer programs. An object is an instance of a class, which can contain data (attributes) and code (methods). For example, an employee class can have attributes like employee ID, name, and date of birth, and methods like calculating salary or applying for leave.
