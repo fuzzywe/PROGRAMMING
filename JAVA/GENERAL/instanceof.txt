@@ -1,0 +1,102 @@
+What does the 'instanceof' operator do in Java?
+2.2K answered
+Creates a new instance of a class
+Compares two objects
+Defines an interface
+Checks if an object is an instance of a specific class(correct)
+Explanation
+The 'instanceof' operator is like a detective for objects. It looks at an object and checks if it belongs to a certain class or type. It's super helpful when you want to know what kind of object you're dealing with. For example, if you have a pet object, you could use 'instanceof' to see if it's a dog, cat, or something else. This helps you write code that works differently for different types of objects.
+
+Java has three main access modifiers: public, private, and protected. It also has a default access level (when no modifier is specified). The 'friend' keyword, which exists in C++, is not a valid access modifier in Java. Java doesn't have a direct equivalent to C++'s friend concept
+
+
+What is the Singleton design pattern?
+3.3K answered
+A pattern for organizing code into modules
+A pattern for creating multiple objects efficiently
+A pattern that ensures a class has only one instance(correct)
+A pattern for handling exceptions in a program
+Explanation
+The Singleton pattern is a creational design pattern that restricts the instantiation of a class to a single instance. It provides a global point of access to that instance. This is useful when exactly one object is needed to coordinate actions across the system, like a configuration manager or a connection pool. Singletons are implemented by creating a private constructor and a static method that returns the single instance.
+
+
+Which of these is used to convert a string to an integer in Java?
+2.3K answered
+Integer.parseInt(string)
+String.toInteger(string)
+Integer.convert(string)
+String.parseInteger(string)
+Explanation
+In Java, Integer.parseInt(string) is the standard method to convert a string representation of a number into an integer. It takes a string argument and returns the equivalent integer value. For example, Integer.parseInt("123") returns the int value 123. This method throws a NumberFormatException if the string doesn't contain a valid integer. It's commonly used when working with user input or data from external sources. 
+
+
+TapTap
+2 months ago
+What are comparators in Java?
+2.7K answered
+Objects that define custom ordering for collections
+Tools for comparing performance of different algorithms
+Functions that check if two variables are equal
+Operators used to compare primitive data types
+Explanation
+Comparators are objects that define a custom way to compare elements. They're used to sort collections or data structures in a specific order. Unlike the natural ordering provided by Comparable, Comparators allow multiple ways to sort the same set of objects. They're especially useful when you can't modify the original class or when you need different sorting criteria. Comparators implement a compare() method to determine the order of elements.
+
+What are memory leaks in programming?
+3.3K answered
+Unintentional loss of data during program execution
+Allocation of memory that is never freed after use(correct)
+Overflow of memory beyond its capacity
+Corruption of memory due to malware
+Explanation
+Memory leaks occur when a program allocates memory but fails to release it when it's no longer needed. This causes the program to use more and more memory over time, potentially leading to slower performance or crashes. Memory leaks are common in languages without automatic garbage collection, but can happen in any language if resources aren't properly managed.
+
+
+What is a helper function in programming?
+2K answered
+A built-in function provided by the programming language
+A function that helps optimize code execution speed
+A function that assists the main function by performing a specific task(cirrect)
+A function that manages memory allocation
+Explanation
+Helper functions are small, reusable functions that perform a part of a larger task. They're used to break down complex operations into simpler, more manageable pieces. Helper functions make code more readable, maintainable, and reduce repetition. They often handle specific calculations or data manipulations that support the main function's goal. 
+
+
+TapTap
+3 months ago
+Which collection does not allow null elements?
+4.3K answered
+ArrayList
+LinkedList
+HashSet
+TreeSet
+Explanation
+TreeSet doesn't allow null elements. It's a sorted set that uses a tree structure, and it needs to compare elements to maintain order. Since null can't be compared to other objects, TreeSet throws a NullPointerException if you try to add null. Other collections like ArrayList, LinkedList, and HashSet do allow null elements. This rule helps TreeSet keep its sorting reliable.
+
+What is the purpose of the 'static' keyword in Java?
+4.4K answered
+To create an instance variable
+To create a class-level variable or method(correct)
+To prevent inheritance
+To implement polymorphism
+Explanation
+The 'static' keyword in Java is used to make something belong to the class itself, not to any specific instance of the class. Static variables are shared by all objects of the class. Static methods can be called without creating an object of the class. This is useful for utility functions or constants that don't need object-specific data. Static members are accessed using the class name, not an object reference. 
+
+
+What is Hibernate in the context of Java development?
+2.4K answered
+A Java-based memory management too
+A Java code optimization technique
+A web application server
+An Object-Relational Mapping (ORM) framework(crt)
+Explanation
+Hibernate is a popular ORM tool for Java. It links Java objects to database tables, making it easier to work with databases in Java programs. Instead of writing complex SQL queries, you can use Java code to save, update, or fetch data. Hibernate handles the translation between Java objects and database records. This saves time, reduces errors, and lets developers focus on Java rather than database details
+
+What type of exception occurs when dividing by 0 in Java?
+3.6K answered
+NullPointerException
+DivideByZeroException
+NumberFormatException
+ArithmeticException
+Explanation
+In Java, when you try to divide a number by zero, it throws an ArithmeticException. This is a runtime exception that happens when you do math that doesn't make sense, like dividing by zero. The computer can't do this calculation, so Java stops the program and tells you about the error. It's important to handle this exception in your code to prevent your program from crashing.
+
