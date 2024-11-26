@@ -81,3 +81,79 @@ p = &i;     // This is valid; `p` now points to `i`.
 - At the time of **declaration**, `*` indicates that the variable is a pointer.
 - During **assignment**, you don’t use `*` when assigning an address to a pointer.
 - Using `*p = &i` is a type mismatch because you're attempting to store an address (`int *`) in a location meant for an integer (`int`).
+- The provided code attempts to modify a **read-only (const)** value, which is not allowed in C or C++. Let’s analyze the code step by step and explain the error:
+
+---
+
+### **Code Walkthrough**
+
+```c
+#include <stdio.h>
+
+void fun(const int *p) {
+    *p = 0;  // ERROR: Attempt to modify a read-only location
+}
+
+int main() {
+    const int i = 10;  // `i` is a constant integer
+    fun(&i);           // Pass the address of `i` to `fun`
+    return 0;
+}
+```
+
+---
+
+### **Key Points**
+
+1. **What Does `const int *p` Mean?**
+   - This declares a pointer `p` to a constant integer. 
+   - `p` can point to different integers, but the value at the address it points to **cannot be modified** through `p`.
+
+2. **Why Does `*p = 0` Cause an Error?**
+   - Inside the function `fun`, the statement `*p = 0;` attempts to modify the value of the integer pointed to by `p`.
+   - However, since `p` is a pointer to a constant integer (`const int *p`), the compiler prevents any modification of the value it points to.
+   - This results in a compilation error: **"assignment of read-only location `*p`."**
+
+3. **Why Is `i` Declared as `const`?**
+   - In the `main` function, `i` is declared as `const int i = 10;`. This ensures that `i` is a constant and its value cannot be changed after initialization.
+   - Passing the address of `i` to `fun` doesn’t change this const-ness because `fun` explicitly declares the parameter as `const int *p`, reinforcing the immutability of the value being pointed to.
+
+4. **Error Message Explanation:**
+   - The error occurs because the program violates the contract of immutability imposed by the `const` qualifier.
+
+---
+
+### **Fixed Version**
+
+If you want to allow the modification of the value in the function, you must **remove the `const` qualifier**:
+
+```c
+#include <stdio.h>
+
+void fun(int *p) {
+    *p = 0;  // Now this is valid because `p` is not pointing to a constant
+}
+
+int main() {
+    int i = 10;   // `i` is not a constant anymore
+    fun(&i);      // Pass the address of `i`
+    printf("%d\n", i);  // Output: 0
+    return 0;
+}
+```
+
+---
+
+### **Output of the Original Code**
+
+The original code does not compile. The compilation error will be:
+
+```
+error: assignment of read-only location '*p'
+```
+
+---
+
+### **Conclusion**
+
+The error occurs because you are attempting to modify a value (`*p`) through a pointer (`const int *p`) that is declared as pointing to a constant. This is prohibited in both C and C++.
