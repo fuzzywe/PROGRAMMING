@@ -157,3 +157,13 @@ error: assignment of read-only location '*p'
 ### **Conclusion**
 
 The error occurs because you are attempting to modify a value (`*p`) through a pointer (`const int *p`) that is declared as pointing to a constant. This is prohibited in both C and C++.
+
+Question 3: How to print the address of a variable?
+Solution: use %p as a format specifier in printf function
+int main() {
+int i = 10;
+int *p = &i;
+printf("The address of variable i is %p", p);
+return 0;
+}
+Output: The address of variable i is 0x7ffd5b9a987c
