@@ -50,4 +50,12 @@ Array Index Out of Bounds Exception caught!
 3. The `catch` block for `ArrayIndexOutOfBoundsException` catches the exception and prints the message.
 4. The `catch` block for `Exception` is skipped because the exception has already been caught by a more specific catch block.
 
+Question 1: Why do we need to use try-catch blocks in Java?
+
+Answer: try-catch blocks are used to handle exceptions gracefully, ensuring that the program can continue to run or fail gracefully without crashing. They help in managing resources, logging errors, notifying users, and controlling the flow of the program when an error occurs. This makes the application more robust, reliable, and user-friendly.
+
+Question 2: What is the purpose of the finally block in a try-catch construct?
+
+Answer: The finally block is used to execute code that must run regardless of whether an exception is thrown or not. It is typically used for resource management, such as closing files, releasing database connections, or cleaning up resources. The finally block ensures that important cleanup code is executed, preventing resource leaks and ensuring the stability of the application.
+
 This demonstrates the use of multiple catch blocks to handle different types of exceptions in Java.
