@@ -1,17 +1,31 @@
 In computer science, primitive data structures are basic data types, while non-primitive data structures are more complex. Primitive data structures are used for simple applications, while non-primitive data structures are used for more complex data management. 
-Primitive data structures 
+
+Primitive data structures   
+
 Definition: Simple, predefined data types that are used to store single values
+
 Examples: Integers, floats, chars, and booleans
+
 Storage: Stored directly in memory
+
 Mutability: Immutable, meaning their values cannot be changed
+
 Comparison: Compared by value
+
 Performance: Generally faster due to simpler storage
+
 Non-primitive data structures 
+
 Definition: More complex data structures that can store collections or sets of data
+
 Examples: Arrays, lists, trees, and graphs
+
 Storage: Stored as references in memory
+
 Mutability: Mutable, meaning their values can be modified
+
 Comparison: Compared by reference
+
 Performance: May have slower processing
 
 In programming, **data types** are broadly classified into **primitive** and **non-primitive** types. Let’s understand the differences and examples for each.
