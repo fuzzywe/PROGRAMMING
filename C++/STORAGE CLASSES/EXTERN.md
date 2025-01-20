@@ -24,3 +24,6 @@ void write_extern(void) {
 
 ```
 Here, extern keyword is being used to declare count in another file. Now compile these two files as follows −
+
+$./write
+5
