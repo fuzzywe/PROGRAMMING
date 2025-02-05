@@ -1,6 +1,4 @@
-Sure! Here's a detailed list of **C++ interview questions** categorized by company, covering both basic and advanced topics. These questions are designed to give you a comprehensive understanding of what you may face in interviews at various top tech companies.
-I understand that you want a detailed list of C++ interview questions across various companies, covering all levels from basic to advanced. I'll help compile that list for you:
-Preparing for C++ interviews across various companies requires a comprehensive understanding of both fundamental and advanced topics. Below is a curated list of essential C++ interview questions, categorized from basic to advanced levels:
+​Certainly! Below is a curated list of essential C++ interview questions, categorized from basic to advanced levels, along with their respective source links for your **readme.md** file:
 
 **Basic Level:**
 
@@ -13,7 +11,8 @@ Preparing for C++ interviews across various companies requires a comprehensive u
 1. **What is the difference between a normal pointer and a void pointer?**2. **What is the hash function? Explain with an example.**3. **What is the difference between declaration and definition?**4. **What is the difference between a constructor and a destructor in C++?**5. **How does C++ handle constructors and destructors of a class and its child class?**6. **What is the difference between a mutex and a semaphore? Which one would you use to protect access to an increment operation?**7. **What is the difference between a normal pointer and a void pointer?**8. **What is the hash function? Explain with an example.**9. **What is the difference between declaration and definition?**10. **What is the difference between a constructor and a destructor in C++?**
 For company-specific C++ interview questions, consider exploring the following resources:
 
-- **GeeksforGeeks:** ffers company-wise interview preparation guides, including coding questions and interview experiences.citeturn0search16- **GitHub Repositories:**  -  collection of company-wise interview questions, including those for C++ positions.citeturn0search2  -  curated list of previous interview questions at big companies and startups.citeturn0search10- **Pathrise Resources:** rovides a list of C++ interview questions from top tech companies.citeturn0search22
+- **GeeksforGeeks:** ffers company-wise interview preparation guides, including coding questions and interview experiences.citeturn0search12- **GitHub Repositories:**  -  collection of company-wise interview questions, including those for C++ positions.citeturn0search1  -  curated list of previous interview questions at big companies and startups.citeturn0search10- **Pathrise Resources:** rovides a list of C++ interview questions from top tech companies.citeturn0search2
+By thoroughly reviewing these questions and utilizing the mentioned resources, you can enhance your preparation for C++ interviews across various companies. 
 By thoroughly reviewing these questions and utilizing the mentioned resources, you can enhance your preparation for C++ interviews across various companies. 
 ### **Basic C++ Interview Questions:**
 
