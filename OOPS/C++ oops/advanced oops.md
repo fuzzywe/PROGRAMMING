@@ -345,4 +345,144 @@ int main() {
 
 ---
 
-These unique and practical examples should impress your interviewer by demonstrating not only your understanding of C++ concepts but also your ability to apply them in creative ways. Let me know if you need more examples or further clarification! 😊
+For the coding question you mentioned (summing elements and printing the number of digits greater than a certain value), I will provide a C++ solution that calculates the sum of the array's digits, finds the average, and compares each element with the average to count how many digits are greater.
+
+For the second part, sorting an array containing 0s, 1s, and 2s, this is a variation of the "Dutch National Flag" problem, which can be solved efficiently using the 3-way partitioning approach.
+
+### **1️⃣ Array-based Problem:**
+The task involves summing the array's digits and comparing each digit with the computed average.
+
+Here's a C++ solution:
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> arr = {2, 4, 1, 6, 9}; // Example array
+    
+    // Calculate the sum of the array
+    int sum = 0;
+    for (int i = 0; i < arr.size(); i++) {
+        sum += arr[i];
+    }
+
+    // Calculate the average of the array
+    float avg = (float)sum / arr.size();
+
+    // Count elements greater than the average
+    int count = 0;
+    for (int i = 0; i < arr.size(); i++) {
+        if (arr[i] > avg) {
+            count++;
+        }
+    }
+
+    cout << "Sum of elements: " << sum << endl;
+    cout << "Average of elements: " << avg << endl;
+    cout << "Count of elements greater than the average: " << count << endl;
+    
+    return 0;
+}
+```
+
+### **Explanation:**
+1. The program first calculates the sum of the array elements.
+2. It then computes the average of the array elements by dividing the sum by the array's size.
+3. Finally, it iterates through the array and counts how many elements are greater than the computed average.
+
+### **2️⃣ Sorting an Array Containing 0s, 1s, and 2s:**
+This can be solved using the "Dutch National Flag Problem," which can be efficiently implemented in C++ using a three-pointer approach.
+
+Here's the code for sorting an array with 0s, 1s, and 2s:
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void sortArray(vector<int>& arr) {
+    int low = 0, mid = 0, high = arr.size() - 1;
+
+    while (mid <= high) {
+        if (arr[mid] == 0) {
+            swap(arr[low], arr[mid]);
+            low++;
+            mid++;
+        }
+        else if (arr[mid] == 1) {
+            mid++;
+        }
+        else {
+            swap(arr[mid], arr[high]);
+            high--;
+        }
+    }
+}
+
+int main() {
+    vector<int> arr = {0, 1, 2, 1, 0, 2, 1, 0, 2}; // Example array
+
+    sortArray(arr);
+
+    cout << "Sorted Array: ";
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+```
+
+### **Explanation:**
+1. We use three pointers (`low`, `mid`, `high`) to partition the array into three sections: 0s, 1s, and 2s.
+2. The `mid` pointer traverses through the array, and based on the element at `arr[mid]`, we move elements to the appropriate positions using `low` and `high`.
+3. If `arr[mid] == 0`, we swap it with `arr[low]` and increment both `low` and `mid`.
+4. If `arr[mid] == 1`, we simply move `mid` forward.
+5. If `arr[mid] == 2`, we swap it with `arr[high]` and decrement `high`.
+
+Both problems are solved with efficient algorithms in O(n) time complexity, which is optimal for these tasks.
+
+Certainly! Here are answers for the remaining sections based on your interview experience:
+
+---
+
+### **Managerial Interview (Approx. 35 mins)**
+
+#### 🔹 **Why a mental health project?**
+- *Answer*: I was deeply inspired to work on this project after the COVID-19 pandemic, during which many people faced mental health challenges. I wanted to create a system that could provide mental health support and guidance in an easily accessible, non-judgmental way. The increasing demand for mental health services and the stigma around discussing it led me to build a system like the PsychBot using LLaMA 3.
+
+#### 🔹 **Why should we give you Prime instead of Digital?**
+- *Answer*: I believe that my unique experience and the skills I developed during my ML-based PsychBot project, as well as my understanding of complex problem-solving and system design, make me a great fit for the Prime role. Prime's focus on leadership and strategic thinking aligns with my ability to work on long-term, impactful projects, and I’m ready to take on that challenge. Digital would have been a good fit too, but I feel Prime would allow me to grow and contribute at a broader level, aligning with my long-term career goals.
+
+#### 🔹 **Tell 5 strengths and 5 weaknesses (Deep cross-questions on each).**
+- *Answer*:  
+  **Strengths**:
+  - **Problem-Solving:** I thrive on solving complex problems, such as working on my PsychBot project where I had to understand mental health issues and create an AI-driven solution.
+  - **Adaptability:** I am quick to adapt to new technologies and work environments, demonstrated by my fast learning of tools like LLaMA 3 for mental health support.
+  - **Teamwork:** I believe in the power of collaboration and always seek to bring people together to tackle challenges. During my project, I collaborated with others to fine-tune the model.
+  - **Leadership:** I've taken ownership of projects, ensuring that I motivate and guide the team to meet deadlines and deliver quality results.
+  - **Time Management:** I am highly organized and efficient in managing time, ensuring that tasks are completed on schedule without compromising quality.
+
+  **Weaknesses**:
+  - **Perfectionism:** I tend to focus too much on perfecting my work, sometimes at the expense of speed. However, I am working on finding a balance.
+  - **Delegating:** I sometimes struggle with delegation because I like to have control over the project. I’m learning to trust team members more and empower them to take ownership.
+  - **Overthinking:** I sometimes overanalyze situations, leading to indecision. I’ve been working on making quicker, well-informed decisions.
+  - **Public Speaking:** While I’m confident in technical discussions, I sometimes find it challenging to speak in large groups. I’ve been working on improving my public speaking skills by practicing and attending workshops.
+  - **Taking Criticism:** Initially, I found it hard to take criticism, but I’ve grown to embrace it as a way to improve and learn from others.
+
+---
+
+### **HR Interview (Approx. 15 mins)**
+
+#### 🔹 **Family background, relocation preferences, and work-life balance.**
+- *Answer*: I come from a supportive family that has always encouraged my learning and career growth. I’m open to relocation and understand the importance of flexibility, and I am excited about the opportunities this position presents. Regarding work-life balance, I believe in maintaining a healthy balance. I make sure to prioritize personal time while being committed to my professional responsibilities, ensuring that I’m effective in both areas.
+
+#### 🔹 **How will you manage your health after starting the job?**
+- *Answer*: I recognize that health is a priority, and I’ve always maintained a balanced lifestyle by incorporating exercise, healthy eating, and mindfulness into my routine. Once I start working, I’ll ensure to set boundaries, schedule breaks, and prioritize my mental and physical health to prevent burnout. Additionally, I’ll make time for hobbies and relaxation, which help me stay focused and productive at work.
+
+---
+
+These responses should help convey your personality, readiness for the role, and how you handle both technical and personal challenges during your interviews.
