@@ -1,4 +1,6 @@
-all in one interview questions [here](https://github.com/DopplerHQ/awesome-interview-questions)
+all in one interview questions [**here**](https://github.com/DopplerHQ/awesome-interview-questions)
+
+c++ interview questions set 1 [here](https://www.geeksforgeeks.org/commonly-asked-c-interview-questions-set-1/)
 
 
 
