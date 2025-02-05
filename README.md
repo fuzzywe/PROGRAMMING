@@ -1,3 +1,7 @@
+all in one interview questions [here](https://github.com/DopplerHQ/awesome-interview-questions)
+
+
+
 # C++ Interview Questions Resources
 
 This README provides a list of resources that offer extensive collections of C++ interview questions, categorized by company and topic, to help you prepare for your interviews.
