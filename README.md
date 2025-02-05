@@ -1,6 +1,3 @@
-Here’s a ready-to-use `README.md` file with links to the C++ interview question resources you requested:
-
-```markdown
 # C++ Interview Questions Resources
 
 This README provides a list of resources that offer extensive collections of C++ interview questions, categorized by company and topic, to help you prepare for your interviews.
@@ -53,6 +50,3 @@ This README provides a list of resources that offer extensive collections of C++
 ---
 
 Explore these resources to get access to a variety of C++ interview questions, categorized by company, topic, and difficulty. Best of luck with your interview preparation!
-```
-
-You can copy this into a `README.md` file for easy access. This will serve as a great reference as you prepare for your C++ interview!
