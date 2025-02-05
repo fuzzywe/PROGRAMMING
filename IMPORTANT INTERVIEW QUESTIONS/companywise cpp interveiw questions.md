@@ -1,19 +1,49 @@
-​Certainly! Below is a curated list of essential C++ interview questions, categorized from basic to advanced levels, along with their respective source links for your **readme.md** file:
+Here are the **C++ interview questions** from various companies based on the sources provided:
 
-**Basic Level:**
+### **Basic Level:**
 
-1. **What are the different data types present in C++?**2. **Define 'std'.**3. **What are references in C++?**4. **What do you mean by Call by Value and Call by Reference?**5. **Define token in C++.**6. **What is the difference between class and structure in C++?**7. **What are the access specifiers in C++?**8. **What is the 'main()' function in C++? Can we run a program without the main method?**9. **What is inheritance in object-oriented programming?**10. **What is the difference between abstract and interface classes?**
-**Intermediate Level:**
+1. **What are the different data types present in C++?**
+2. **Define 'std'.**
+3. **What are references in C++?**
+4. **What do you mean by Call by Value and Call by Reference?**
+5. **Define token in C++.**
+6. **What is the difference between class and structure in C++?**
+7. **What are the access specifiers in C++?**
+8. **What is the 'main()' function in C++? Can we run a program without the main method?**
+9. **What is inheritance in object-oriented programming?**
+10. **What is the difference between abstract and interface classes?**
 
-1. **What is the difference between vector and arraylist?**2. **What is the difference between encapsulation and abstraction?**3. **What are virtual functions?**4. **What is the difference between reference and pointer?**5. **What is RAII (Resource Acquisition Is Initialization)?**6. **What is the difference between deep and shallow copy?**7. **What are callback functions?**8. **What are different sorting and searching algorithms?**9. **What is the difference between a mutex and a semaphore? Which one would you use to protect access to an increment operation?**10. **How is dynamic memory allocation done in C++?**
-**Advanced Level:**
+### **Intermediate Level:**
 
-1. **What is the difference between a normal pointer and a void pointer?**2. **What is the hash function? Explain with an example.**3. **What is the difference between declaration and definition?**4. **What is the difference between a constructor and a destructor in C++?**5. **How does C++ handle constructors and destructors of a class and its child class?**6. **What is the difference between a mutex and a semaphore? Which one would you use to protect access to an increment operation?**7. **What is the difference between a normal pointer and a void pointer?**8. **What is the hash function? Explain with an example.**9. **What is the difference between declaration and definition?**10. **What is the difference between a constructor and a destructor in C++?**
-For company-specific C++ interview questions, consider exploring the following resources:
+1. **What is the difference between vector and arraylist?**
+2. **What is the difference between encapsulation and abstraction?**
+3. **What are virtual functions?**
+4. **What is the difference between reference and pointer?**
+5. **What is RAII (Resource Acquisition Is Initialization)?**
+6. **What is the difference between deep and shallow copy?**
+7. **What are callback functions?**
+8. **What are different sorting and searching algorithms?**
+9. **What is the difference between a mutex and a semaphore? Which one would you use to protect access to an increment operation?**
+10. **How is dynamic memory allocation done in C++?**
 
-- **GeeksforGeeks:** ffers company-wise interview preparation guides, including coding questions and interview experiences.citeturn0search12- **GitHub Repositories:**  -  collection of company-wise interview questions, including those for C++ positions.citeturn0search1  -  curated list of previous interview questions at big companies and startups.citeturn0search10- **Pathrise Resources:** rovides a list of C++ interview questions from top tech companies.citeturn0search2
-By thoroughly reviewing these questions and utilizing the mentioned resources, you can enhance your preparation for C++ interviews across various companies. 
-By thoroughly reviewing these questions and utilizing the mentioned resources, you can enhance your preparation for C++ interviews across various companies. 
+### **Advanced Level:**
+
+1. **What is the difference between a normal pointer and a void pointer?**
+2. **What is the hash function? Explain with an example.**
+3. **What is the difference between declaration and definition?**
+4. **What is the difference between a constructor and a destructor in C++?**
+5. **How does C++ handle constructors and destructors of a class and its child class?**
+6. **What is the difference between a mutex and a semaphore? Which one would you use to protect access to an increment operation?**
+7. **What is the difference between a normal pointer and a void pointer?**
+8. **What is the hash function? Explain with an example.**
+9. **What is the difference between declaration and definition?**
+10. **What is the difference between a constructor and a destructor in C++?**
+
+These questions cover a broad range of topics from basic to advanced and are intended to help you prepare for a C++ interview across various companies.
+
+If you need further details or explanations for any of the questions, feel free to ask!
+
+
 ### **Basic C++ Interview Questions:**
 
 1. **What are the different data types in C++?**
