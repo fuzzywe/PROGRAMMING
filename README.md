@@ -4,6 +4,8 @@ c++ interview questions set 1 [here](https://www.geeksforgeeks.org/commonly-aske
 
 c++ interview questions [here](https://github.com/kaarthic/interview-preparation/blob/master/C%2B%2B%20Interview%20Questions.md)
 
+best of [all](https://github.com/Nabagata/interview-prep)
+
 # C++ Interview Questions Resources
 
 This README provides a list of resources that offer extensive collections of C++ interview questions, categorized by company and topic, to help you prepare for your interviews.
