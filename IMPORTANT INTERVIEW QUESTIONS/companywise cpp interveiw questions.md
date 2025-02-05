@@ -1,4 +1,107 @@
 Sure! Here's a detailed list of **C++ interview questions** categorized by company, covering both basic and advanced topics. These questions are designed to give you a comprehensive understanding of what you may face in interviews at various top tech companies.
+I understand that you want a detailed list of C++ interview questions across various companies, covering all levels from basic to advanced. I'll help compile that list for you:
+
+### **Basic C++ Interview Questions:**
+
+1. **What are the different data types in C++?**
+2. **What is the difference between `struct` and `class` in C++?**
+3. **Explain the concept of a pointer and a reference.**
+4. **What are access specifiers in C++?**
+5. **What is the role of the `main()` function in C++?**
+6. **What is a constructor and a destructor?**
+7. **What is the difference between `new` and `malloc` in C++?**
+8. **Explain `call by value` and `call by reference`.**
+9. **What is a template in C++?**
+10. **Explain the concept of dynamic memory allocation in C++.**
+
+### **Intermediate C++ Interview Questions:**
+
+1. **What is the difference between deep copy and shallow copy?**
+2. **What is polymorphism in C++?**
+3. **What is an abstract class?**
+4. **What is a virtual function in C++?**
+5. **What is multiple inheritance, and how is it handled in C++?**
+6. **What is a pure virtual function?**
+7. **Explain the concept of exception handling in C++.**
+8. **What are static variables and functions?**
+9. **Explain the use of the `const` keyword in C++.**
+10. **What is the difference between a reference and a pointer in C++?**
+
+### **Advanced C++ Interview Questions:**
+
+1. **What is RAII (Resource Acquisition Is Initialization)?**
+2. **Explain the concept of a smart pointer in C++.**
+3. **What is the significance of `virtual` destructors in C++?**
+4. **What is the purpose of the `mutable` keyword?**
+5. **What is the difference between `#include` and `#define` in C++?**
+6. **What is the difference between `std::vector` and `std::list` in C++?**
+7. **What is a lambda expression in C++?**
+8. **What is the difference between a function pointer and a lambda function?**
+9. **Explain move semantics in C++.**
+10. **What is the purpose of `std::move` in C++?**
+
+### **C++ Interview Questions for Top Tech Companies:**
+
+#### **Google:**
+1. **What is the difference between a pointer and a reference?**
+2. **How would you implement a linked list in C++?**
+3. **Explain the concept of dynamic polymorphism.**
+4. **What is the use of `inline` functions in C++?**
+5. **How would you find the nth Fibonacci number using recursion and dynamic programming?**
+
+#### **Microsoft:**
+1. **Explain the differences between `new` and `malloc`.**
+2. **How can you manage memory in C++?**
+3. **What is a segmentation fault?**
+4. **What are the main differences between `struct` and `class`?**
+5. **What is a `const` function, and how do you use it?**
+
+#### **Amazon:**
+1. **What is the difference between `++i` and `i++`?**
+2. **How does memory management work in C++?**
+3. **Explain the use of the `friend` keyword in C++.**
+4. **What is the significance of a constructor in object-oriented programming?**
+5. **How would you handle multiple inheritance in C++?**
+
+#### **Facebook:**
+1. **What is the use of `std::move`?**
+2. **How does exception handling work in C++?**
+3. **What are `std::shared_ptr` and `std::unique_ptr`?**
+4. **What is a deadlock in multithreading, and how can you avoid it in C++?**
+5. **How does `std::thread` work in C++?**
+
+#### **Apple:**
+1. **What is the difference between `malloc()` and `calloc()` in C++?**
+2. **What is the use of `new` and `delete` operators in C++?**
+3. **How would you implement an LRU Cache in C++?**
+4. **What is the purpose of the `volatile` keyword in C++?**
+5. **Explain `const` correctness in C++ and how you would use it.**
+
+### **Company-Specific Advanced Topics:**
+
+#### **Adobe:**
+1. **What are design patterns, and can you name a few commonly used in C++?**
+2. **How would you optimize a given code for performance in C++?**
+3. **Explain the memory model of C++ and how it impacts thread safety.**
+4. **What are the advantages of using `std::map` and `std::unordered_map` in C++?**
+5. **How does the compiler optimize C++ code for performance?**
+
+#### **Netflix:**
+1. **How does C++ handle multi-threading?**
+2. **Explain the differences between `std::vector` and `std::deque` in C++.**
+3. **What is the C++ Standard Template Library (STL)?**
+4. **How do you handle concurrency in C++?**
+5. **What are `std::mutex` and `std::lock_guard` in C++?**
+
+---
+
+### **Conclusion:**
+This list is a starting point, but the questions can be even more specific depending on the company and position you're applying for. To thoroughly prepare, make sure to:
+- **Practice coding** each topic, especially with live coding platforms.
+- **Review key concepts** like memory management, object-oriented principles, and STL.
+- **Work on advanced topics** like smart pointers, lambda functions, and multi-threading.
+
+Good luck with your C++ interview preparation!
 
 ### **1. Accenture Questions:**
 - What is the difference between a **class** and a **struct** in C++?
