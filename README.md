@@ -2,7 +2,7 @@ all in one interview questions [**here**](https://github.com/DopplerHQ/awesome-i
 
 c++ interview questions set 1 [here](https://www.geeksforgeeks.org/commonly-asked-c-interview-questions-set-1/)
 
-
+c++ interview questions [here](https://github.com/kaarthic/interview-preparation/blob/master/C%2B%2B%20Interview%20Questions.md)
 
 # C++ Interview Questions Resources
 
