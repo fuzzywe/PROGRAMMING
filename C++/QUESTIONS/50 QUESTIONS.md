@@ -457,6 +457,164 @@ Here are the **answers to the next 20 C++ interview questions** with unique and 
 
 ---
 
+
+Here are the **next 10 C++ interview questions** along with their answers to help you continue preparing for your interview:
+
+---
+
+### **41. What is the Rule of Three/Five/Zero in C++?**
+- **Rule of Three**:
+  - If a class defines one of the following, it should define all three:
+    - Destructor
+    - Copy constructor
+    - Copy assignment operator
+- **Rule of Five**:
+  - Extends the Rule of Three to include:
+    - Move constructor
+    - Move assignment operator
+- **Rule of Zero**:
+  - Classes should avoid defining custom copy/move constructors or destructors by using smart pointers and STL containers.
+
+---
+
+### **42. What is move semantics and rvalue references?**
+- **Move Semantics**:
+  - Allows resources (e.g., memory) to be transferred from one object to another without copying.
+  - Improves performance by avoiding expensive deep copies.
+- **Rvalue References**:
+  - Represented by `&&`.
+  - Used to bind to temporary objects (rvalues).
+  - Example:
+    ```cpp
+    void func(int&& x) { // x is an rvalue reference
+        std::cout << x;
+    }
+    ```
+
+---
+
+### **43. What is `std::move()`? How does it work?**
+- **`std::move()`**:
+  - Converts an object into an rvalue, enabling move semantics.
+  - Does not move anything itself; it just casts the object to an rvalue reference.
+  - Example:
+    ```cpp
+    std::string str1 = "Hello";
+    std::string str2 = std::move(str1); // Moves resources from str1 to str2
+    ```
+
+---
+
+### **44. What is perfect forwarding in C++?**
+- **Perfect Forwarding**:
+  - Allows a function to forward arguments to another function while preserving their value category (lvalue or rvalue).
+  - Achieved using `std::forward` and universal references (`T&&`).
+  - Example:
+    ```cpp
+    template <typename T>
+    void wrapper(T&& arg) {
+        func(std::forward<T>(arg)); // Perfectly forwards arg
+    }
+    ```
+
+---
+
+### **45. What is a lambda expression in C++?**
+- **Lambda Expression**:
+  - A concise way to define anonymous functions.
+  - Syntax:
+    ```cpp
+    [capture](parameters) -> return_type { body }
+    ```
+  - Example:
+    ```cpp
+    auto add = [](int a, int b) { return a + b; };
+    std::cout << add(2, 3); // Output: 5
+    ```
+
+---
+
+### **46. What is `std::function` and `std::bind`?**
+- **`std::function`**:
+  - A general-purpose polymorphic function wrapper.
+  - Can store any callable object (function, lambda, etc.).
+  - Example:
+    ```cpp
+    std::function<int(int, int)> func = [](int a, int b) { return a + b; };
+    std::cout << func(2, 3); // Output: 5
+    ```
+- **`std::bind`**:
+  - Binds arguments to a function, creating a new callable object.
+  - Example:
+    ```cpp
+    auto add = std::bind([](int a, int b) { return a + b; }, 2, std::placeholders::_1);
+    std::cout << add(3); // Output: 5
+    ```
+
+---
+
+### **47. What is the difference between `constexpr` and `const`?**
+- **`const`**:
+  - Indicates that a variable's value cannot be modified.
+  - Evaluated at runtime.
+- **`constexpr`**:
+  - Indicates that a variable or function can be evaluated at compile time.
+  - Used for optimization and ensuring compile-time constants.
+  - Example:
+    ```cpp
+    constexpr int square(int x) { return x * x; }
+    constexpr int result = square(5); // Evaluated at compile time
+    ```
+
+---
+
+### **48. What is `std::thread`? How do you handle multithreading in C++?**
+- **`std::thread`**:
+  - Represents a thread of execution.
+  - Example:
+    ```cpp
+    void func() {
+        std::cout << "Hello from thread!\n";
+    }
+    std::thread t(func);
+    t.join(); // Wait for the thread to finish
+    ```
+- **Multithreading**:
+  - Use `std::thread` to create threads.
+  - Synchronize threads using `std::mutex`, `std::lock_guard`, or `std::unique_lock`.
+
+---
+
+### **49. What is a mutex and how is it used in C++?**
+- **Mutex**:
+  - A synchronization primitive used to protect shared resources from concurrent access.
+- **Usage**:
+  ```cpp
+  std::mutex mtx;
+  void func() {
+      std::lock_guard<std::mutex> lock(mtx); // Automatically locks and unlocks
+      // Critical section
+  }
+  ```
+
+---
+
+### **50. What is `std::async` and `std::future`?**
+- **`std::async`**:
+  - Runs a function asynchronously and returns a `std::future` object.
+  - Example:
+    ```cpp
+    auto future = std::async([]() { return 42; });
+    std::cout << future.get(); // Output: 42
+    ```
+- **`std::future`**:
+  - Represents the result of an asynchronous operation.
+  - Use `get()` to retrieve the result.
+
+---
+
+These answers are concise, accurate, and demonstrate a deep understanding of C++. Practice explaining them clearly to impress your interviewer! 🚀
+
 ### **40. What is `std::pair` and `std::tuple`?**
 - **`std::pair`**:
   - A container that holds two elements of different types.
